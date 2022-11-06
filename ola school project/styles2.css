@@ -1,0 +1,241 @@
+
+body{
+    margin: 0;
+    background-color:#f8eddf ;
+    background-image:url("img/Signup.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    font-family: 'El Messiri', sans-serif;
+
+}
+
+
+.all-content{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    margin: 50px;
+    text-align: center;
+}
+
+.form{
+    background-color: #f8eddf;
+    opacity: 98%;
+    display: flex;
+    flex-flow: column;
+    align-content: flex-start;
+    padding: 20px 20px;
+    width: 550px;
+    border-radius: 20px;
+    border: 3px solid #2f1b32;
+    position: relative;
+    
+}
+
+.form h2{
+    text-align: center;
+    color: #2f1b32;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 30px;
+} 
+
+
+.form-control{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+
+/* form controle input boxes style */
+.form-control input{
+    height: 20px;
+    padding: 10px;
+    border-radius: 18px;
+    border: 3px solid #2f1b32;
+    display: inline-block;
+    width: 200px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.form-control input:focus{
+    outline: none;
+    border-color: #4f518c;
+}
+
+.form-control input[type=radio]{
+    width: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 0;
+}
+
+.radio{
+    border-radius: 18px;
+    border: 3px solid #2f1b32;
+    background-color: white;
+    padding: 5px;
+    width: 210px;
+}
+
+/* form control select boxex style */
+.form-control select{
+    display: table-column;
+    width: 226px;
+    height: 46px;
+    padding: 10px;
+    border-radius: 18px;
+    border: 3px solid #2f1b32;
+
+}
+
+select:focus{
+    outline: none;
+    border-color: #4f518c;
+}
+
+select option{
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+/*form control lebal style */
+.form-control label{
+    font-size: 18px;
+    color: #2f1b32;
+    width: 300px;
+    text-align: right;
+}
+
+/* contact information fieldset style */
+fieldset{
+    border-radius: 20px;
+    border: 2px solid #2f1b32; 
+    display: inline-block;
+    min-width: 0;
+}
+
+legend{
+    text-align: right;
+    margin-right: 10px;
+    padding: 0px 7px;
+}
+
+
+/* information boxes style */
+.informationbox{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px;
+    border: 2px solid #2f1b32;   
+    background-color: #2f1b32;
+    color: #f8eddf;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 246px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+.informationbox img{
+    width: 150px;
+    height: auto;
+}
+
+
+
+.buttonshape{
+    border-radius: 14px;
+    border: 3px solid #2f1b32;
+    font-family: 'El Messiri', sans-serif;
+    background-color: #f8eddf;
+    transition: background-color 0.7s, color 0.7s;
+}
+.submit{
+height: 40px;
+width: 200px;
+margin-bottom: 20px;
+font-size: 18px;
+}
+
+.backmain{
+position: absolute;
+border-color: #f8eddf;
+left: 10px;
+bottom: 10px;
+}
+
+.buttonshape:hover{
+    background-color: #2f1b32;
+    color: #f8eddf;
+}
+
+@media (max-width: 992px) {
+    .all-content{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .informationbox{
+        margin: 0;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius:0;
+        border-top-right-radius: 25px;
+        width: 480px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .form{
+        width: 450px;
+    }
+    .informationbox{
+        width: 400px;
+    }
+}
+@media (max-width: 576px) {
+    .form{
+        width: 300px;
+    }
+    .form-control{
+        flex-flow: column;
+        justify-items: right;
+    }
+    .radio .form-control{
+        flex-flow: row;
+    }
+    .informationbox{
+        width: 260px;
+    }
+    .all-content{
+        margin: 5px;
+    }
+    .form-control input{
+        width: 91% ;
+    }
+    .form-control select{
+        width: 100%;
+    }
+    .form-control .radio{
+        width: 95%;
+    }
+    .fieldset .form-control label{
+        padding-right:50px ;
+    }
+    .informationbox{
+        width: 260px;
+    }
+    .form-control label{
+        padding-right: 20px;
+    }
+    
+}

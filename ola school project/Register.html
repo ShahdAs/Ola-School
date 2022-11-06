@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet">
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css" href="styles2.css">
+
+         
+    </head>
+    <body>   
+    <div class="all-content" dir="rtl">
+        <div class="informationbox">
+            <img src="img/ola-white.png" alt="">
+            <h1>مدرسة العلا للّغات</h1>
+            <p>يرجى التواصل معنا لأي استفسار عن المدرسة <br>مستعدون للإجابة عن كل أسئلتكم.</p>
+        </div>
+        <form action="" id="form">
+            <div  class="form" >
+                <h2>للاشتراك الرجاء تعبئة الاستمارة</h2>
+                <p>هذه الاستمارة لتسجيل طالب واحد فقط، إذا رغبت بتسجيل أكثر من طفر يرجى تعبئة استمارة لكل واحدٍ منهم.</p>
+                <p style="color:red ;"> الحقول المعلمة ب* هي حقول إجبارية.</p>
+                <br><br>
+                <div class="form-control">
+                    <label for="text">اسم الطفل كاملاً:*</label>
+                    <input type="text" placeholder="Username" class="input">
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="date">تاريخ الولادة:*</label>
+                    <input type="date" id="date" class="input">
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="gender">جنس الطفل:*</label>
+                    <select name="gender" id="gender"  class="input">
+                        <option value="male">ذكر</option>
+                        <option value="Female">أنثى</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="fatherName">اسم الأب:* </label>
+                    <input type="text"id="fatherName" placeholder="Father name" class="input">
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="motherName">اسم الأم:* </label>
+                    <input type="text" id="motherName" placeholder="Mother name" class="input">
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label>المشرف:*</label>
+                <div class="radio">
+                        <div class="form-control">
+                        <label for="mother">الأم </label>
+                        <input type="radio" value="mother" id="mother" name="sup">
+                        </div>
+                        <div class="form-control">
+                        <label for="father">الأب </label>
+                        <input type="radio" value="father" id="father" name="sup">
+                        </div>
+                        <div class="form-control">
+                        <label for="togther">الأم والأب معاً </label>
+                        <input type="radio" value="togther" id="togther" name="sup"> 
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="language">أدخل اللغة التي ترغب بتعليمها لطفلك:* </label>
+                    <select name="language" id="language">
+                        <option value="English">اللغة الانجليزية</option>
+                        <option value="Arabic">اللغة العربية</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="isSpeaken">هل يستطيع طفلك التحدث بها؟ </label>
+                    <select name="isSpeaken" id="isSpeaken">
+                        <option value="yes">نعم</option>
+                        <option value="no">لا</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="isLearnt">هل درسها سابقاً؟* </label>
+                    <select name="isLearnt" id="isLearnt">
+                        <option value="yes">نعم</option>
+                        <option value="no">لا</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="level">ما هو مستواه بها؟* </label>
+                    <select name="level" id="level">
+                        <option value="junior">مبتدئ</option>
+                        <option value="medium">متوسط</option>
+                        <option value="good">جيد</option>
+                    </select>
+                </div>
+                <br><br>
+                
+                <fieldset class="fieldset"> 
+                <legend>معلومات التواصل</legend>
+                <div >
+                    <div class="form-control">
+                        <label for="email">الإيميل: </label>
+                        <input type="email" name="" id="email" class="" placeholder="Email"> 
+                        <small dir="ltr" id="small">error massage</small>
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="tel">الهاتف مع الرمز الدولي:* </label>
+                    <input type="tel" id="tel" placeholder="Phone number">
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="Country">البلد المقيم فيها حالياً:* </label>
+                    <input type="text" id="Country" placeholder="Country">
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="city">المدينة المقيم فيها حالياً:* </label>
+                    <input type="text" id="city" placeholder="city">
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="Address">العنوان: </label>
+                    <input type="text" name="" id="Address" placeholder="Address">
+                </div>
+                <br><br>
+                <div class="form-control">
+                    <label for="AddressDe">عنوان سكن الطفل بالتفصيل:* </label>
+                </div>  
+                <br>
+                <div>
+                    <textarea name="AddressDe" id="AddressDe" cols="40" rows="10"></textarea>
+                </div>
+                </fieldset>
+                
+                <br><br>
+                <div class="form-control">
+                    <label for="quastion" >رسالتك أو سؤالك للمدرسة: </label> 
+                </div>
+                <br>
+                <div >
+                    <textarea name="quastion" id="quastion" cols="40" rows="10"></textarea>
+                </div>
+                <br><br>
+                <div >
+                    <input type="submit" name="" id="" value="اشترك" class="submit buttonshape">
+                </div>
+                <a href="index.html">
+                    <button type="button" class="backmain buttonshape">
+                       العودة إلى الصفحة الرئيسية
+                    </button>
+                </a> 
+            </div>
+        </form>
+        
+    </div>
+        <script src="script/sendbox.js"></script>
+        <script src="script/jquery-3.6.0.js"></script>
+    </body>
+</html>

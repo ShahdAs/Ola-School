@@ -1,0 +1,514 @@
+body{
+    margin: 0 0;
+}
+
+#library{
+    background-color:#f8eddf ;
+    background-image:url("img/background2.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+
+}
+
+
+
+
+
+
+.banner{
+    background-color: #f8eddf;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    width: 100%;
+    align-items: center;
+}
+
+.welcome-img{
+    width: 100%;
+}
+
+.banner .welcome-text{
+    position: absolute;
+    top: 12vw;
+    padding: 10px;
+    text-align: center;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.welcome-text img{
+  width: 20vw;
+}
+.banner h2{
+    font-size: 4vw;
+    padding: 5px;
+}
+
+
+/* title of the page for stories music and movies */
+.titleOfThePage{
+    padding: 20px;
+    border: 2px solid #5A8371;
+    background-color: #f8eddf;
+    border-radius: 40px;
+    font-family: 'El Messiri', sans-serif;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+
+}
+/* cards for stories music and movies */
+.row{
+    margin: 30px !important;
+    border-radius: 40px;
+    padding: 20px;
+    background-color:rgba(248, 237, 223, 0.9)
+}
+
+div .card{
+    margin: 20px 10px;
+    padding-top:12px ;
+    position: relative;
+    font-family: 'El Messiri', sans-serif;
+    opacity: 100% !important;
+    box-shadow: 1px 1px 10px #CCA7D5;
+}
+
+.download-logo img{
+    box-shadow: 2px 2px 10px #ABC5BA;
+    position: absolute;
+    border-radius: 50px;
+    bottom: 5px;
+    left: 5px;
+    width: 50px;
+    transition: box-shadow 0.5s, width 0.5s, bottom 0.5s, left 0.5s;
+}
+
+.download-logo img:hover{
+    box-shadow: 6px 6px 10px #ABC5BA;
+    width: 60px;
+    bottom: -5px;
+    left: -5px;
+}
+
+.card .btn{
+    position: absolute;
+    bottom: 5px;
+    right:0px ;
+    padding-left: 50px !important;
+    background-color: #5A8371;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    color: #f8eddf;
+    box-shadow: 2px 2px 10px #ABC5BA;
+    transition: padding 0.5s ;
+}
+.card .btn:hover{
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 54px !important;
+    color: #f8eddf !important;
+
+}
+
+
+.card .card-title{
+    padding-bottom: 30px;
+}
+
+/* tabs for movie and music */
+.mm .nav-pills{
+    background-color: rgba(248, 237, 223, 0.9);
+    padding: 20px;
+    margin: 0 30px;
+    border-radius: 50px;
+}
+.mm .nav-link{
+    background-color: #f8eddf !important;
+    color: #5A8371 !important;
+    border-radius: 20px !important;
+    border: 2px solid #5A8371 !important;
+    transform:background-color 0.5s, color 0.5s ;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 20px;
+    height: 50px;
+    width: 200px !important;
+    margin: 5px 50px;
+
+}
+.mm .nav-item .active{
+    background-color: #5A8371 !important;
+    color: #f8eddf !important;
+}
+
+.mm .nav-link:hover{
+    background-color: #5A8371 !important;
+    color: #f8eddf !important;
+}
+.mm .tab-pane{
+    background-color: none;
+}
+
+/* space img */
+.space1{
+    width: 100%;
+}
+
+
+/* main page tab */
+.grade .tab{
+    font-family: 'El Messiri', sans-serif;
+    padding: 20px;
+    background-color: #f8eddf;
+    opacity: 90%;
+}
+
+.grade .nav-tabs{
+    background-color: #f8eddf !important;
+    opacity: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid #5E3168;
+    padding: 0!important;
+    padding-top: 5px !important;
+}
+
+.grade .nav-tabs .nav-link{
+    color: #5E3168 !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border:  none !important;
+    transition: background-color 0.5s,color 0.5s;
+}
+.grade .nav-tabs .active{
+    color: #f8eddf !important;
+    background-color: #5E3168 !important;
+}
+
+.grade .nav-tabs .nav-link:hover{
+    color: #f8eddf !important;
+    background-color: #5E3168 !important;
+}
+
+.grade .tab-pane{
+    text-align: center;
+    padding: 20px;
+    color: #f8eddf;
+    
+}
+.grade .tab-content
+{
+    background-color: #5E3168;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 90%;
+}
+
+
+.grade .main-tab-button{
+    margin: 20px;
+    border-radius: 14px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid #5E3168;
+    background-color: #f8eddf;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.grade .main-tab-button:hover{
+ background-color: #5E3168;
+ color: #f8eddf;
+}
+
+/* main page story library links */
+.main-library{
+    font-family: 'El Messiri', sans-serif;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2e8f9;
+}
+
+.main-library .books-img{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+.library-text{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.lib-button{
+    margin: 10px;
+    border-radius: 14px;
+    width: 140px;
+    height: 50px;
+    border: 2px solid #5ec6e5;
+    background-color: #d2e8f9;
+    
+ font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lib-button:hover{
+ background-color: #5ec6e5;
+ color: white;
+}
+
+.space-kids{
+    width: 100%;
+}
+
+/* main page music & movies library */
+.main-music{
+    font-family: 'El Messiri', sans-serif;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFD9F4;
+}
+
+.main-music .music-img{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+.music-text{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.mus-button{
+    margin: 10px;
+    border-radius: 14px;
+    width: 210px;
+    height: 50px;
+    border: 2px solid #5E3168;
+    background-color: #EFD9F4;
+    
+ font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mus-button:hover{
+ background-color: #5E3168;
+ color: white;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5a053;
+    font-family: 'El Messiri', sans-serif;
+    color: #f8eddf;
+}
+
+.contact-us{
+ flex: 1 1 0;
+}
+.contact-us p{
+    color: #f8eddf;
+    padding: 5px;
+    margin: 0px !important;
+    width: 180px;
+    text-align: right;
+}
+.contact-us .social{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us .social img{
+    padding: 5px;
+    width: 30px;
+}
+.contact-us .social a{
+    width: 150px;
+    text-align: right;
+    margin: 0px !important;
+    text-decoration: none;
+    color: #f8eddf;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo-copy-write{
+    flex: 1 1 0;
+}
+.logo-copy-write img{
+    width: 140px;
+    padding-top: 5px;
+}
+
+
+/* zbout page */
+#about{
+    background-color:#f8eddf ;
+    background-image:url("img/background3.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    font-family: 'El Messiri', sans-serif;
+}
+.about1{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.square-title{
+    position: absolute;
+    top: 13%;
+    left: 6%;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #5A8371;
+    color: #f8eddf;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.square-title img{
+    width: 200px;
+}
+
+.about-info{
+    width: 1000px;
+    background-color: #f8eddf;
+    border-radius: 20px; 
+    margin: 50px;
+    margin-left: 400px;
+    padding: 100px;
+    text-align: center;
+    border: 2px solid #5A8371;
+    
+}
+
+
+/* sign in and signup style */
+.Signinup{
+    background-color:#f8eddf ;
+    background-image:url("img/Signup.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+
+}
+
+.Signinup .main{
+    height: 93.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'El Messiri', sans-serif;
+    color: #f8eddf;
+}
+
+.Signinup .information-div {
+        padding: 20px 30px;
+        border-radius: 20px;
+        border: 2px solid f8eddf;
+        background-color: #b19ab4;
+        box-shadow: 4px 4px 15px gray;
+}
+ .field{
+    border-radius: 20px;
+    border: 3px solid #f8eddf; 
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+.field input{ 
+    width: 260px;
+    margin: 10px;
+    margin-top: 0;
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid #f8eddf;
+    font-size: 14px;
+    text-align: left;
+    background-color: #f8eddf;
+}
+
+.Signinup .field legend{
+    text-align: right;
+    margin-right: 10px;
+    padding: 0px 7px;
+    font-size: 18px;
+    float: unset !important;
+    width: auto;
+} 
+.Signinup form{
+display: flex;
+flex-flow: column;
+align-items: center;
+}
+.Signinup .submit{
+ width: 120px;
+ height: 40px;
+ margin: 10px;
+ border-radius: 15px;
+ border: 0px;
+ background-color: #f8eddf;
+ color: #5E3168;
+}
+.rememberme{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-top: 7px;
+}
+.rememberme h5{
+margin: 0px;
+font-size: 18px;
+}
+h6 a{
+    color: #f8eddf !important;
+}
+
+@media (max-width: 768px){
+    .main-library{
+        flex-flow: column;
+    }
+    .main-music{
+        flex-flow: column;
+    }
+    footer{
+        flex-flow: column;
+    }
+}
+@media (max-width: 576px){
+    .welcome-img{
+        display: none;
+    }
+    .banner {
+        position: static;
+    }
+    .banner .welcome-text{
+        position: static;
+    }
+    .welcome-text img{
+        width: 200px;
+      }
+      .banner h2{
+          font-size: 30px;
+      }
+}
